@@ -1,0 +1,134 @@
+.roadmap {
+      text-align: center;
+      margin-top: 4rem;
+
+      &__title {
+            font-size: 4.8rem;
+            font-weight: 700;
+            margin-bottom: 8rem;
+      }
+
+      &__main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+      }
+
+      &__road {
+            max-width: 100%;
+            margin-top: 2rem;
+            animation: upndown 4s infinite;
+
+            @media only screen and (max-width: $bp-small) {
+                  display: none;
+            }
+      }
+
+      &__content {
+            &--img {
+                  width: 46.5rem;
+
+                  @media only screen and (max-width: $bp-small) {
+                        width: 48.5rem;
+                        max-width: 100%;
+                  }
+            }
+
+            &-1 {
+                  position: absolute;
+                  top: 0%;
+                  left: 0;
+                  text-align: left;
+                  @media only screen and (max-width: $bp-small) {
+                        position: relative;
+                  }
+            }
+            &-2 {
+                  position: absolute;
+                  top: 12%;
+                  right: 0;
+                  text-align: right;
+                  @media only screen and (max-width: $bp-small) {
+                        position: relative;
+                  }
+            }
+            &-3 {
+                  position: absolute;
+                  top: 25%;
+                  left: 0;
+                  text-align: left;
+                  @media only screen and (max-width: $bp-small) {
+                        position: relative;
+                  }
+            }
+            &-4 {
+                  position: absolute;
+                  top: 38%;
+                  right: 0;
+                  text-align: right;
+                  @media only screen and (max-width: $bp-small) {
+                        position: relative;
+                  }
+            }
+            &-5 {
+                  position: absolute;
+                  top: 51%;
+                  left: 0;
+                  text-align: left;
+                  @media only screen and (max-width: $bp-small) {
+                        position: relative;
+                  }
+            }
+      }
+
+      &__context {
+            font-size: 2rem;
+            position: absolute;
+            width: 50%;
+            line-height: 1.1;
+
+            @media only screen and (max-width: $bp-small) {
+                  width: 30%;
+            }
+
+            &-2-b,
+            &-4-b {
+                  display: none;
+                  right: 0;
+                  margin-right: 18rem;
+                  top: 20%;
+                  @media only screen and (max-width: $bp-small) {
+                        display: block;
+                  }
+            }
+
+            &-1,
+            &-3,
+            &-5 {
+                  top: 25%;
+                  right: 10%;
+
+                  @media only screen and (max-width: $bp-small) {
+                        right: none;
+                        left: 0;
+                        top: 20%;
+                        margin-left: 18rem;
+                  }
+            }
+            &-2,
+            &-4 {
+                  top: 25%;
+                  left: 10%;
+
+                  @media only screen and (max-width: $bp-small) {
+                        display: none;
+                  }
+            }
+      }
+
+      &__subtitle {
+            color: $color-primary;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+      }
+}

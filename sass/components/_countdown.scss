@@ -1,0 +1,37 @@
+
+.countdown {
+      color: $color-primary;
+      margin-top: -4rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-family: $font-primary;
+      
+
+      @media only screen and (max-width: $bp-large) {
+            
+      }
+}
+
+li {
+      display: inline-block;
+      font-size: 2.2rem;
+      list-style-type: none;
+      padding: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+
+     
+}
+
+li span {
+      display: block;
+      font-size: 12.8rem;
+      font-weight:700;
+      margin-left: 2rem;
+      margin-bottom: -3rem;
+      text-shadow: 0px 0px 10px rgba($color-secondary, .2);
+
+      @media only screen and (max-width: $bp-small) {
+            font-size: 9rem; 
+      }
+}

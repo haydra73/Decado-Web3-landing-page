@@ -1,0 +1,32 @@
+.footer {
+      background-color: $color-secondary;
+      line-height: 1.1;
+      padding: 4rem 2rem;
+
+      &__contain {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width:$bp-small) {
+                 flex-direction: column;
+            }
+      }
+
+      &__logo {
+
+            @media only screen and (max-width:$bp-small) {
+                  margin-bottom: 2rem;
+             }
+      }
+      &__email:link,
+      &__email:visited {
+            color: $color-primary;
+            text-decoration: none;
+            font-size: 2.4rem;
+      }
+      &__contact {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+      }
+}

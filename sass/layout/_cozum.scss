@@ -1,0 +1,60 @@
+.cozum{
+      margin-top: 0rem;
+
+      &__title {
+
+            font-family: $font-secondary;
+            font-size: 6.4rem;
+            color: $color-primary;
+            text-align: center;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width:$bp-medium) {
+                  line-height: 1;
+            }
+            
+      }
+
+      &__text {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            align-items: center;
+            grid-column-gap: 1.5rem;
+            
+            text-transform: uppercase;
+
+            @media only screen and (max-width:$bp-medium) {
+                  grid-column-gap: 1rem;
+            }
+            
+      
+            &::before,
+            &::after {
+                  content: " ";
+                  height: 5px;
+                  display: block;
+                  background-color: $color-primary;
+            }
+      }
+
+      &__logos{
+            
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: space-evenly;
+
+            img {
+                  display: block;
+                  align-self: center;
+                  @media only screen and (max-width:$bp-large) {
+                       height: 10rem;
+                  }
+                  @media only screen and (max-width:$bp-medium) {
+                        height: 6rem;
+                  }
+            }
+      }
+}
+

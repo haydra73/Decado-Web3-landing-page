@@ -1,0 +1,91 @@
+.proje {
+      max-width: 118rem;
+      text-align: center;
+      margin-top: 6rem;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+
+
+      &__title {
+            font-size: 6.4rem;
+      }
+
+      &__details {
+            font-size: 2.4rem;
+      }
+
+      &__graphic {
+            position: relative;
+            user-select: none;
+      }
+
+      &__img {
+            margin-top: -6rem;
+            @media only screen and (max-width: $bp-large) {
+                  width: 50rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                  width: 45rem;
+            }
+
+            animation: upndown 4s infinite;
+      }
+      &__cards {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-small) {
+                  width: 90%;
+            }
+      }
+      &__glass-card {
+            font-size: 3.6rem;
+            font-weight: 700;
+            padding: 2.5rem 5rem;
+            background: linear-gradient(170deg, rgba(#ffffff, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.16);
+            backdrop-filter: blur(4px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 23px;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transition: all 0.4s;
+
+            &:hover {
+                  transform: translateY(-2px);
+            }
+
+            &:not(:last-child) {
+                  margin-bottom: 0.2rem;
+            }
+
+            &:nth-of-type(1),
+            &:nth-of-type(3) {
+                  align-self: flex-start;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+                  align-self: flex-end;
+            }
+      }
+}
+
+@keyframes upndown {
+      0% {
+            transform: translateY(-2px);
+      }
+      50% {
+            transform: translateY(4px);
+      }
+      100% {
+            transform: translateY(-2px);
+      }
+}

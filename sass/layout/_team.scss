@@ -1,0 +1,111 @@
+.team {
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+      @media only screen and (max-width:$bp-small) {
+            margin-top: 4rem;
+            padding: 0 5rem;
+       }
+
+
+
+      &__head {
+            padding: 3rem 6rem;
+            
+            background-color: $color-primary;
+            border-radius: 50rem;
+            margin: 0 auto;
+            position: relative;
+            z-index: 100;
+
+            @media only screen and (max-width:$bp-large) {
+                  padding: 2rem 6rem;
+             }
+            @media only screen and (max-width:$bp-small) {
+                  padding: 1rem 4rem;
+             }
+
+            &--support{
+                  height: 9.4rem;
+                  width: 100%;
+                  border-top-left-radius: 10rem;
+                  border-top-right-radius: 10rem;
+                  background-color: $color-primary;
+                  margin-top: -8%;
+
+                  @media only screen and (max-width:$bp-small) {
+                        width: 100%;
+                    }
+                 
+            }
+
+      }
+
+      &__title {
+            color: white;
+            font-size: 4.8rem;
+            font-weight: 600;
+            margin-top: 3rem;
+      }
+
+      &__individuals {
+            display: flex;
+            gap: 1.9rem;
+
+            @media only screen and (max-width:$bp-small) {
+                 flex-direction: column;
+             }
+           
+           
+      }
+      &__card {
+
+            
+           
+
+           
+
+      }
+
+      &__clip {
+            border-bottom-left-radius: 19rem;
+            border-bottom-right-radius: 19rem;
+            overflow: hidden;
+
+            @media only screen and (max-width:$bp-small) {
+
+                  &-2,&-3 {
+                        border-radius: 50%;
+                  }       
+              }
+           
+
+      }
+
+     
+      &__photo {
+            display: block;
+            max-width: 100%;
+      }
+      &__detail {
+
+      }
+      &__name {
+            font-size: 3.6rem;
+            font-weight: 600;
+      }
+      &__contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+      }
+      &__position {
+            font-weight: 300;
+            font-size: 2.4rem;
+      }
+
+}

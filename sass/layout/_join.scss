@@ -1,0 +1,59 @@
+.join {
+      background-color: $color-primary;
+      margin-top: 6rem;
+      line-height: 1.1;
+      padding: 4rem 2rem;
+
+      &__contain {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-large) {
+                  flex-direction: column;
+                  justify-content: center;
+            }
+      }
+      &__title {
+            font-family: $font-secondary;
+            font-size: 12rem;
+            font-weight: 600;
+            text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.53);
+            color: #fff;
+            line-height: 1;
+            @media only screen and (max-width: $bp-large) {
+                  margin-bottom: 3rem;
+                  font-size: 9rem;
+            }
+      }
+
+      &__form {
+            position: relative;
+            transition: all .1s;
+
+            &:hover {
+                  transform: translateX(3px);
+            }
+      }
+      &__img {
+            width: 44.3rem;
+      }
+
+      &__link:link,
+      &__link:visited {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            font-size: 3.2rem;
+            position: absolute;
+            top: 35%;
+            left: 60%;
+            letter-spacing: 3px;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+            @media only screen and (max-width: $bp-large) {
+                 left: 58%;
+            }
+
+      }
+}
